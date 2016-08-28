@@ -51,14 +51,6 @@ This will generate the theme files at `dist\css` and `dist\js`.
 There are other grunt targets that provide support for generating docs, publishing and deployment of the theme.
 
 
-## Creators
-
-**Adnan M.Sagar, PhD**
-
-- <https://twitter.com/adnan_msagar>
-- <https://websemantics.ca>
-
-
 ## Copyright and license
 
 Code and documentation copyright 2016 the Bootstrap Authors, Twitter, Inc. Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
