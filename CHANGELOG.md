@@ -1,5 +1,6 @@
 # Changelog
 
 ## 1.0
- * First release
- * Make jQuery plugins
+ * Grunt build system compatible with Bootstrap
+ * Merge distribution files (css/js) with Bootstrap
+ * Ready for custom jQuery plugins

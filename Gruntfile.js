@@ -72,7 +72,7 @@ module.exports = function (grunt) {
           modules: 'ignore'
         },
         files: {
-          '<%= concat.bootstrap.dest %>' : '<%= concat.bootstrap.dest %>'
+          '<%= concat.themeblr.dest %>' : '<%= concat.themeblr.dest %>'
         }
       }
     },
@@ -82,9 +82,9 @@ module.exports = function (grunt) {
         banner: '<%= banner %>\n<%= jqueryCheck %>\n<%= jqueryVersionCheck %>\n+function ($) {\n',
         footer: '\n}(jQuery);'
       },
-      bootstrap: {
+      themeblr: {
         files: {
-          src: '<%= concat.bootstrap.dest %>'
+          src: '<%= concat.themeblr.dest %>'
         }
       }
     },
@@ -92,14 +92,16 @@ module.exports = function (grunt) {
     concat: {
       options: {
         // Custom function to remove all export and import statements
+        // Also, concat Bootstrap.js
         process: function (src) {
           return src.replace(/^(export|import).*/gm, '');
         },
         stripBanners: false
       },
-      bootstrap: {
+      themeblr: {
         src: [
-          'js/src/custom.js'
+          'js/src/custom.js',
+          'node_modules/bootstrap/dist/js/bootstrap.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
@@ -114,7 +116,7 @@ module.exports = function (grunt) {
         preserveComments: /^!|@preserve|@license|@cc_on/i
       },
       core: {
-        src: '<%= concat.bootstrap.dest %>',
+        src: '<%= concat.themeblr.dest %>',
         dest: 'dist/js/<%= pkg.name %>.min.js'
       },
       docsJs: {
@@ -148,7 +150,7 @@ module.exports = function (grunt) {
     cssmin: {
       options: {
         // TODO: disable `zeroUnits` optimization once clean-css 3.2 is released
-        //    and then simplify the fix for https://github.com/twbs/bootstrap/issues/14837 accordingly
+        //    and then simplify the fix for https://github.com/twbs/themeblr/issues/14837 accordingly
         compatibility: 'ie9',
         keepSpecialComments: '*',
         sourceMap: true,
@@ -234,7 +236,7 @@ module.exports = function (grunt) {
 
     watch: {
       src: {
-        files: '<%= concat.bootstrap.src %>',
+        files: '<%= concat.themeblr.src %>',
         tasks: ['babel:dev']
       },
       sass: {
