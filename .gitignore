@@ -5,6 +5,8 @@ _site
 # Ignore ruby files
 .ruby-version
 .bundle
+public
+dist
 vendor/cache
 vendor/bundle
 
