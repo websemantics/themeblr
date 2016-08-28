@@ -2,3 +2,4 @@
 
 ## 1.0
  * First release
+ * Make jQuery plugins

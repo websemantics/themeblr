@@ -12,7 +12,7 @@
     "web"
   ],
   "homepage": "http://websemantics.github.io/themeblr/",
-  "author": "The Bootstrap Authors (https://github.com/websemantics/themeblr/graphs/contributors)",
+  "author": "The Bootstrap Authors",
   "contributors": [
     {"name": "Web Semantics, Inc.", "url": "http://websemantics.ca", "email": "info@websemantics.ca"},
     {"name": "Twitter, Inc.", "url": "http://twitter.com"}
@@ -26,7 +26,7 @@
     "postcss-docs": "postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/assets/css/docs.min.css && postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/examples/**/*.css",
     "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./node_modules/bootstrap/grunt/npm-shrinkwrap.json",
     "test": "npm run eslint && npm run jscs && grunt test"
-  }, 
+  },
   "style": "dist/css/themeblr.css",
   "sass": "scss/themeblr.scss",
   "main": "./dist/js/npm",
