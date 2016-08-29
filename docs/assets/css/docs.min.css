@@ -72,9 +72,6 @@
 .feature-item .feature-item {
   width: 100px;
   padding: 1.5rem 0;
-}
-
-.feature-item .feature-item .icon .brand-fill {
   fill: #41A85F;
 }
 
