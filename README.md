@@ -18,8 +18,10 @@
 ```
 >  A powerful CSS framework boilerplate and Bootstrap 4 themes builder. Themeblr provides an easy way to extend Bootstrap 4 styles and plugins using Bootstrap 4 Grunt system. Themeblr can also be used as the basis for developing new CSS frameworks, for example [Brimer](https://github.com/websemantics/Brimer) and [Strapant](https://github.com/websemantics/strapant). Huge thanks to the creators and authors of [Bootstrap](https://getbootstrap.com/) for creating such a magnificent framework and build system.
 
+### [Features](http://websemantics.github.io/themeblr)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/themeblr/issues)
 
-## Quick start
+
+## Getting Started
 
 First, clone or fork this repository and change `package.json` details  (name, version etc) to suit your requirements.
 
