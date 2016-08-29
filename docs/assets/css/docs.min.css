@@ -14,9 +14,9 @@
 .masthead {
   position: relative;
   padding: 2rem 1rem;
-  color: #5ea4ca;
+  color: #5cbf79;
   text-align: center;
-  background-image: linear-gradient(135deg, #24536c, #3D8EB9, #6db1d5);
+  background-image: linear-gradient(135deg, #255e35, #41A85F, #69cc86);
 }
 
 .masthead h1 {
@@ -33,13 +33,13 @@
 .masthead .lead {
   margin: 0 auto 30px;
   font-size: 18px;
-  color: #d1e4ef;
+  color: #c9ead3;
 }
 
 .masthead .btn.outline.inverse {
   color: #fff;
   background-color: transparent;
-  border-color: #f7fbfd;
+  border-color: #eef9f1;
 }
 
 .masthead .btn.outline.inverse .icon {
@@ -49,14 +49,14 @@
 }
 
 .masthead .btn.outline.inverse:active, .masthead .btn.outline.inverse:focus, .masthead .btn.outline.inverse:hover {
-  color: #3D8EB9;
+  color: #41A85F;
   text-shadow: none;
   background-color: #fff;
   border-color: #fff;
 }
 
 .masthead .btn.outline.inverse:active .icon, .masthead .btn.outline.inverse:focus .icon, .masthead .btn.outline.inverse:hover .icon {
-  stroke: #3D8EB9;
+  stroke: #41A85F;
 }
 
 .feature-item {
@@ -72,7 +72,7 @@
 .feature-item .icon {
   width: 100px;
   padding: 1.5rem 0;
-  fill: #3D8EB9;
+  fill: #41A85F;
 }
 
 .tm-footer {
@@ -96,7 +96,7 @@
 }
 
 .tm-footer a:hover {
-  color: #3D8EB9;
+  color: #41A85F;
 }
 
 .tm-footer p {
