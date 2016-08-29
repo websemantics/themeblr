@@ -10,7 +10,8 @@ source:           docs
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
-url:              http://websemantics.github.io/themeblr
+baseurl:          https://websemantics.github.io/themeblr
+url:              https://websemantics.github.io/themeblr
 encoding:         UTF-8
 
 gems:
