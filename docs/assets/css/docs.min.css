@@ -86,6 +86,7 @@
 
 .tm-footer .icon {
   width: 16px;
+  vertical-align: text-bottom;
   stroke: #E25041;
 }
 
