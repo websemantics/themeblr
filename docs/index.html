@@ -1,0 +1,26 @@
+---
+layout: default
+title: Bootstrap &middot; The world's most popular mobile-first and responsive front-end framework.
+---
+
+<div class="bd-featurette">
+  <div class="container">
+    <h2 class="bd-featurette-title">Built with Bootstrap.</h2>
+    <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="../examples">collection of examples</a> or by exploring some of our favorites.</p>
+
+    <div class="row bd-featured-sites">
+    {% for showcase in site.data.showcase %}
+      <div class="col-xs-6 col-sm-3">
+        <a href="{{ showcase.expo_url }}" target="_blank" title="{{ showcase.name }}">
+          <img src="{{ site.baseurl }}/assets/img/expo-{{ showcase.img }}.jpg" alt="{{ showcase.name }}" class="img-fluid">
+        </a>
+      </div>
+    {% endfor %}
+    </div>
+
+    <hr class="half-rule">
+
+    <p>We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap Expo.</p>
+    <a href="{{ site.expo }}" class="btn btn-bs btn-outline">Explore the Expo</a>
+  </div>
+</div>

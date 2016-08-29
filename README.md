@@ -74,6 +74,12 @@ These are few projects built on Themeblr,
 
 [Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap atoms.
 
+## Resource
+
+[Bootstrap 4](http://v4-alpha.getbootstrap.com/), the most popular HTML, CSS, and JS framework in the world for building responsive, mobile-first projects on the web.
+
+[Bootstrap 4 Cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/), a quick reference for Bootstrap v4.0.0-alpha.3.
+
 
 ## Support
 
