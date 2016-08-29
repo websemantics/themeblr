@@ -11,12 +11,28 @@
     "framework",
     "web"
   ],
+  "repository": {
+    "type": "git",
+    "url": "websemantics/themeblr.git"
+  },
   "homepage": "http://websemantics.github.io/themeblr/",
   "author": "The Bootstrap Authors",
   "contributors": [
     {"name": "Web Semantics, Inc.", "url": "http://websemantics.ca", "email": "info@websemantics.ca"},
     {"name": "Twitter, Inc.", "url": "http://twitter.com"}
   ],
+  "config": {
+    "deploy": {
+      "name": "iAyeBot",
+      "email": "iayebot@websemantics.ca",
+      "branch": "master:gh-pages",
+      "message": "Deploy to gh-pages"
+    },
+    "dir": {
+      "src": "./src/",
+      "dist": "./_gh_pages/"
+    }
+  },
   "scripts": {
     "change-version": "node node_modules/bootstrap/grunt/change-version.js",
     "eslint": "eslint --config js/.eslintrc.json js/src && node_modules/bootstrap/",
@@ -25,15 +41,15 @@
     "postcss": "postcss --config node_modules/bootstrap/grunt/postcss.js --replace dist/css/*.css",
     "postcss-docs": "# (uncomment if have docs folder) postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/assets/css/docs.min.css && postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/examples/**/*.css",
     "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./node_modules/bootstrap/grunt/npm-shrinkwrap.json",
-    "test": "npm run eslint && npm run jscs && grunt test"
+    "test": "npm run eslint && npm run jscs && grunt test",
+    "deploy": "[ ${GH_TOKEN} ] && npm run deploy:travis -s || npm run deploy:local -s ",
+    "deploy:local": "repository=$(echo $npm_package_repository_url | sed 's/.*+//') && cd $npm_package_config_dir_dist && git push --force --quiet $repository ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
+    "deploy:travis": "cd $npm_package_config_dir_dist && git push --force --quiet \"https://${GH_TOKEN}@${GH_REF}\" ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
+    "predeploy": "grunt && grunt docs-github && cd $npm_package_config_dir_dist && git init && git config user.name $npm_package_config_deploy_name && git config user.email $npm_package_config_deploy_email && git add -A . && git commit -am \"$npm_package_config_deploy_message\" "
   },
   "style": "dist/css/themeblr.css",
   "sass": "scss/themeblr.scss",
   "main": "./dist/js/npm",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/websemantics/themeblr.git"
-  },
   "bugs": {
     "url": "https://github.com/websemantics/themeblr/issues"
   },
