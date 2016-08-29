@@ -9,7 +9,7 @@
 
 <title>
   
-    Bootstrap &middot; The world's most popular mobile-first and responsive front-end framework. &middot; Bootstrap
+    Themeblr &middot; a powerful CSS framework boilerplate and Bootstrap 4 themes builder. &middot; Bootstrap
   
 </title>
 
@@ -43,75 +43,51 @@
       </div>
     </a>
 
-    <header class="navbar navbar-light navbar-static-top bd-navbar">
-  <div class="container">
-    
-
-    <nav>
-      <div class="clearfix">
-        <button class="navbar-toggler pull-xs-right hidden-sm-up" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
-          &#9776;
-        </button>
-        <a class="navbar-brand hidden-sm-up" href="/">
-          Bootstrap
-        </a>
-      </div>
-      <div class="collapse navbar-toggleable-xs" id="bd-main-nav">
-        <ul class="nav navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-item nav-link " href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Bootstrap</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link " href="/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link " href="/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">Themes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Expo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-item nav-link" href="" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');">Blog</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-</header>
+    <div class="masthead">
+    <div class="container">
+        <div class="brand-item">
+            <img class="svg" src="/assets/brand/themeblr-outline.svg" alt="Themeblr" width="144" height="144">
+        </div>
+        <h1>Themeblr</h1>
+        <p class="lead">
+            A powerful CSS framework boilerplate and <a href="https://getbootstrap.com" title="Visit the Bootstrap docs">Bootstrap</a> 4 themes builder.
+        </p>
+        <p class="lead">
+          <a class="btn outline inverse btn-lg" href="https://github.com/websemantics/themeblr"><span class="glyphicon glyphicon-thumbs-up"></span> Like us on Github</a>
+        </p>
+    </div>
+</div>
 
 
     <div id="content">
-        <div class="bd-featurette">
-  <div class="container">
-    <h2 class="bd-featurette-title">Built with Bootstrap.</h2>
-    <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="../examples">collection of examples</a> or by exploring some of our favorites.</p>
-
-    <div class="row bd-featured-sites">
-    
+        <div class="container">
+  <div class="row content">
+    <div class="col-sm-4 feature-item"><img class="" alt="CSS framework" src="/assets/img/framework.svg" />
+        <h3 id="download-bootstrap">CSS Frameworks</h3>
+        <p>Build new CSS frameworks that are powered with Bootstrap.</p>
     </div>
-
-    <hr class="half-rule">
-
-    <p>We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap Expo.</p>
-    <a href="" class="btn btn-bs btn-outline">Explore the Expo</a>
+    <div class="col-sm-4 feature-item"><img class="" alt="Static Pages" src="/assets/img/pages.svg" />
+        <h3 id="download-source">Static Pages</h3>
+        <p>Support for generating Static Pages and Docs by default.</p>
+    </div>
+    <div class="col-sm-4 feature-item"><img class="" alt="Easy Build" src="/assets/img/build.svg" />
+        <h3 id="download-sass">Easy Build</h3>
+        <p>Use Grunt to build SCSS styles and JavaScript plugins.</p>
+    </div>
   </div>
 </div>
 
     </div>
 
-    <footer class="bd-footer text-muted">
+    <footer class="tm-footer text-muted">
   <div class="container">
-    <ul class="bd-footer-links">
+    <ul class="tm-footer-links">
       <li><a href="https://github.com/websemantics/themeblr">GitHub</a></li>
-      <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
-      <li><a href="/examples/">Examples</a></li>
-      <li><a href="/about/history/">About</a></li>
+      <li><a href="https://twitter.com/adnan_msagar">Twitter</a></li>
+      <li><a href="http://github.com/websemantics">About</a></li>
     </ul>
-    <p>Designed and built with all the love in the world by <a href="https://twitter.com/mdo" target="_blank">@mdo</a> and <a href="https://twitter.com/fat" target="_blank">@fat</a>. Maintained by the <a href="https://github.com/orgs/twbs/people">core team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</p>
-    <p>Currently v1.0.0. Code licensed <a rel="license" href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">MIT</a>, docs <a rel="license" href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.</p>
+    <p>Built with love by <a href="http://github.com/websemantics" target="_blank">Web Semantics, Inc.</a>.</p>
+    <p>Currently v1.0.0. Code licensed <a rel="license" href="http://opensource.org/licenses/mit-license.php" target="_blank">MIT</a>.</p>
   </div>
 </footer>
 
@@ -131,17 +107,6 @@
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="/assets/js/ie-emulation-modes-warning.js"></script>
-
-
-
-<script>
-Holder.addTheme('gray', {
-  bg: '#777',
-  fg: 'rgba(255,255,255,.75)',
-  font: 'Helvetica',
-  fontweight: 'normal'
-})
-</script>
 
   </body>
 </html>

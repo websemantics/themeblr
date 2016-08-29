@@ -1,26 +1,21 @@
 ---
 layout: default
-title: Bootstrap &middot; The world's most popular mobile-first and responsive front-end framework.
+title: Themeblr &middot; a powerful CSS framework boilerplate and Bootstrap 4 themes builder.
 ---
 
-<div class="bd-featurette">
-  <div class="container">
-    <h2 class="bd-featurette-title">Built with Bootstrap.</h2>
-    <p class="lead">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing <a href="../examples">collection of examples</a> or by exploring some of our favorites.</p>
-
-    <div class="row bd-featured-sites">
-    {% for showcase in site.data.showcase %}
-      <div class="col-xs-6 col-sm-3">
-        <a href="{{ showcase.expo_url }}" target="_blank" title="{{ showcase.name }}">
-          <img src="{{ site.baseurl }}/assets/img/expo-{{ showcase.img }}.jpg" alt="{{ showcase.name }}" class="img-fluid">
-        </a>
-      </div>
-    {% endfor %}
+<div class="container">
+  <div class="row content">
+    <div class="col-sm-4 feature-item"><img class="" alt="CSS framework" src="{{ site.baseurl }}/assets/img/framework.svg" />
+        <h3 id="download-bootstrap">CSS Frameworks</h3>
+        <p>Build new CSS frameworks that are powered with Bootstrap.</p>
     </div>
-
-    <hr class="half-rule">
-
-    <p>We showcase dozens of inspiring projects built with Bootstrap on the Bootstrap Expo.</p>
-    <a href="{{ site.expo }}" class="btn btn-bs btn-outline">Explore the Expo</a>
+    <div class="col-sm-4 feature-item"><img class="" alt="Static Pages" src="{{ site.baseurl }}/assets/img/pages.svg" />
+        <h3 id="download-source">Static Pages</h3>
+        <p>Support for generating Static Pages and Docs by default.</p>
+    </div>
+    <div class="col-sm-4 feature-item"><img class="" alt="Easy Build" src="{{ site.baseurl }}/assets/img/build.svg" />
+        <h3 id="download-sass">Easy Build</h3>
+        <p>Use Grunt to build SCSS styles and JavaScript plugins.</p>
+    </div>
   </div>
 </div>

@@ -6,8 +6,103 @@
  * Licensed under the Creative Commons Attribution 3.0 Unported License. For
  * details, see https://creativecommons.org/licenses/by/3.0/.
  */
-.custom {
-  display: block;
+.brand-item {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.masthead {
+  position: relative;
+  padding: 2rem 1rem;
+  color: #5cbf79;
+  text-align: center;
+  background-image: linear-gradient(135deg, #255e35, #41A85F, #69cc86);
+}
+
+.masthead h1 {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  font-size: 3rem;
+}
+
+.masthead a, .masthead h1 {
+  font-weight: 400;
+  color: #fff;
+}
+
+.masthead .lead {
+  margin: 0 auto 30px;
+  font-size: 18px;
+  color: #c9ead3;
+}
+
+.masthead .btn.outline.inverse {
+  color: #fff;
+  background-color: transparent;
+  border-color: #eef9f1;
+}
+
+.masthead .btn.outline.inverse:active, .masthead .btn.outline.inverse:focus, .masthead .btn.outline.inverse:hover {
+  color: #41A85F;
+  text-shadow: none;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.feature-item {
+  padding-top: 60px;
+  color: #55595c;
+  text-align: center;
+}
+
+.feature-item h3 {
+  color: #373a3c;
+}
+
+.feature-item img {
+  width: 100px;
+  padding: 1.5rem 0;
+}
+
+.tm-footer {
+  padding: 4rem 0;
+  margin-top: 4rem;
+  font-size: 85%;
+  color: #99979c;
+  text-align: center;
+  background-color: #2a2730;
+}
+
+.tm-footer a {
+  font-weight: 500;
+  color: #55595c;
+}
+
+.tm-footer a:hover {
+  color: #41A85F;
+}
+
+.tm-footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 544px) {
+  .tm-footer {
+    text-align: left;
+  }
+}
+
+.tm-footer-links {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+
+.tm-footer-links li {
+  display: inline-block;
+}
+
+.tm-footer-links li + li {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=docs.min.css.map */
