@@ -16,7 +16,7 @@
           Build Bootstrap Stuff the Right Way!
 
 ```
->  A powerful CSS framework boilerplate and Bootstrap 4 themes builder. Themeblr provides an easy way to extend Bootstrap 4 styles and plugins using Bootstrap 4 Grunt system. Themeblr can also be used as the basis for developing new CSS frameworks, for example [Brimer](https://github.com/websemantics/Brimer) and [Strapant](https://github.com/websemantics/strapant). Huge thanks to the creators and authors of [Bootstrap](https://getbootstrap.com/) for creating such a magnificent framework and build system.
+>  A powerful CSS framework boilerplate and Bootstrap 4 themes builder. [Themeblr](http://websemantics.github.io/themeblr) provides an easy way to extend Bootstrap 4 styles and plugins using Bootstrap 4 Grunt system. [Themeblr](http://websemantics.github.io/themeblr) can also be used as the basis for developing new CSS frameworks, for example [Brimer](https://github.com/websemantics/Brimer) and [Strapant](https://github.com/websemantics/strapant). Huge thanks to the creators and authors of [Bootstrap](https://getbootstrap.com/) for creating such a magnificent framework and build system.
 
 
 ## Quick start
@@ -35,7 +35,7 @@ For greater level of control, override the individual components styles by addin
 
 ## Javascript
 
-Because Themeblr uses Bootstrap Grunt build system, you can write your own jQuery/Bootstrap plugins inside `js` folder. These plugins along-side Bootstrap's will be compiled and distributed.
+Because [Themeblr](http://websemantics.github.io/themeblr) uses Bootstrap Grunt build system, you can write your own jQuery/Bootstrap plugins inside `js` folder. These plugins along-side Bootstrap's will be compiled and distributed.
 
 
 ## build
@@ -68,7 +68,7 @@ The following section provides examples of projects using this feature to genera
 
 ## Projects
 
-These are few projects built on Themeblr,
+These are few projects built on [Themeblr](http://websemantics.github.io/themeblr),
 
 [Strapant](https://github.com/websemantics/strapant), [Ant Design](http://ant.design/) inspired CSS framework built with Bootstrap 4.
 
