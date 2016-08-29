@@ -82,6 +82,10 @@ These are few projects built on Themeblr,
 
 [Bootstrap 4 Cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/), a quick reference for Bootstrap v4.0.0-alpha.3.
 
+[Flat Colors](http://www.flatdesigncolors.com/), list of flat colors to use with your designs.
+
+[Color calculator](http://razorjam.github.io/sasscolourfunctioncalculator/), sass color function for calculating the Sass color function required to get from one color to another.
+
 
 ## Support
 
