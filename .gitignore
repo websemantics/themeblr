@@ -1,12 +1,13 @@
 # Ignore docs files
 _gh_pages
 _site
+docs/assets/css
+docs/assets/dist
 
 # Ignore ruby files
 .ruby-version
 .bundle
-public
-dist
+Gemfile.lock
 vendor/cache
 vendor/bundle
 
@@ -52,3 +53,4 @@ docs/.jekyll-metadata
 # Folders to ignore
 bower_components
 node_modules
+dist

@@ -1,6 +1,6 @@
 {
   "name": "themeblr",
-  "description": "Flexible boilerplate for building Bootstrap 4 themes.",
+  "description": "A powerful CSS framework boilerplate and Bootstrap 4 themes builder.",
   "version": "1.0.0",
   "keywords": [
     "css",
@@ -23,7 +23,7 @@
     "jscs": "jscs --config=js/.jscsrc js/src js/tests/unit docs/assets/js/src grunt Gruntfile.js docs/assets/js/ie-emulation-modes-warning.js docs/assets/js/ie10-viewport-bug-workaround.js",
     "htmlhint": "htmlhint --config docs/.htmlhintrc _gh_pages/",
     "postcss": "postcss --config node_modules/bootstrap/grunt/postcss.js --replace dist/css/*.css",
-    "postcss-docs": "postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/assets/css/docs.min.css && postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/examples/**/*.css",
+    "postcss-docs": "# (uncomment if have docs folder) postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/assets/css/docs.min.css && postcss --config node_modules/bootstrap/grunt/postcss.js --no-map --replace docs/examples/**/*.css",
     "update-shrinkwrap": "npm shrinkwrap --dev && shx mv ./npm-shrinkwrap.json ./node_modules/bootstrap/grunt/npm-shrinkwrap.json",
     "test": "npm run eslint && npm run jscs && grunt test"
   },

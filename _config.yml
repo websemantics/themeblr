@@ -1,0 +1,21 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Server
+source:           docs
+destination:      _gh_pages
+host:             0.0.0.0
+port:             9001
+url:              http://websemantics.github.io/themeblr
+encoding:         UTF-8
+
+gems:
+  - jekyll-sitemap
+
+# Custom vars
+current_version:  1.0.0
+repo:             https://github.com/websemantics/themeblr
