@@ -32,8 +32,13 @@
       text-shadow: none;
       background-color: #fff;
       border-color: #fff;
+      .icon .icon {
+        width: 32px;
+        vertical-align: text-bottom;
+      }
     }
-    img.svg {
+    .icon {
+      width: 32px;
       vertical-align: text-bottom;
     }
   }

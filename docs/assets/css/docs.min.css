@@ -49,7 +49,8 @@
   border-color: #fff;
 }
 
-.masthead .btn.outline.inverse img.svg {
+.masthead .btn.outline.inverse .icon {
+  width: 32px;
   vertical-align: text-bottom;
 }
 
@@ -63,7 +64,7 @@
   color: #373a3c;
 }
 
-.feature-item img {
+.feature-item .feature-item .icon {
   width: 100px;
   padding: 1.5rem 0;
 }
@@ -75,6 +76,10 @@
   color: #99979c;
   text-align: center;
   background-color: #2a2730;
+}
+
+.tm-footer .icon {
+  width: 16px;
 }
 
 .tm-footer a {
@@ -107,6 +112,22 @@
 
 .tm-footer-links li + li {
   margin-left: 1rem;
+}
+
+.icon {
+  display: inline-block;
+}
+
+.brand-fill {
+  fill: #41A85F;
+}
+
+.red-stroke {
+  stroke: #E25041;
+}
+
+.brand-stroke {
+  stroke: #41A85F;
 }
 
 /*# sourceMappingURL=docs.min.css.map */

@@ -38,9 +38,11 @@ $tm-brand-text:  lighten(desaturate(adjust-hue($tm-brand, 0.4574), 0.8658), 39.6
 $tm-brand-border:  lighten(saturate(adjust-hue($tm-brand, -0.8759), 0.6926), 49.8039);
 $tm-footer-background: #2a2730;
 $tm-footer-color: #99979c;
+$tm-red-color: #E25041;
 
 // Load docs components
 @import "brand";
 @import "masthead";
 @import "content";
 @import "footer";
+@import "svg-defs";

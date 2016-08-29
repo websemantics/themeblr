@@ -4,6 +4,15 @@
 
 .icon {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  .brand-fill {
+    fill: $tm-brand;
+  }
+
+  .red-stroke {
+    stroke: $tm-red-color;
+  }
+
+  .brand-stroke {
+    stroke: $tm-brand;
+  }
 }
