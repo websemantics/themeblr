@@ -1,5 +1,6 @@
 # Ignore docs files
 _gh_pages
+public
 _site
 docs/assets/css
 docs/assets/dist
