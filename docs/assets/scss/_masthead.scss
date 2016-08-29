@@ -27,19 +27,21 @@
     color: #fff;
     background-color: transparent;
     border-color: $tm-brand-border;
+
+    .icon {
+      width: 32px;
+      vertical-align: text-bottom;
+      stroke: #fff;
+    }
+
     &:active, &:focus, &:hover {
       color: $tm-brand;
       text-shadow: none;
       background-color: #fff;
       border-color: #fff;
-      .icon .icon {
-        width: 32px;
-        vertical-align: text-bottom;
+      .icon {
+        stroke: $tm-brand;
       }
-    }
-    .icon {
-      width: 32px;
-      vertical-align: text-bottom;
     }
   }
 }

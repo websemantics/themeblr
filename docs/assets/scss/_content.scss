@@ -9,8 +9,9 @@
   h3 {
     color: $gray-dark;
   }
-  .feature-item .icon {
+  .feature-item {
     width: 100px;
     padding: 1.5rem 0;
+    fill: $tm-brand;
   }
 }
