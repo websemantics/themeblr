@@ -1,27 +1,20 @@
 //
-// Footer guidelines
+// Footer
 //
 
-.tm-footer {
+.bd-footer {
   padding: 4rem 0;
   margin-top: 4rem;
   font-size: 85%;
-  color: $tm-footer-color;
   text-align: center;
-  background-color: $tm-footer-background;
-
-  .icon {
-    width: 16px;
-    vertical-align: text-bottom;
-    stroke: $tm-red-color;
-  }
+  background-color: #f7f7f7;
 
   a {
     font-weight: 500;
     color: $gray;
 
     &:hover {
-      color: $tm-brand;
+      color: $link-color;
     }
   }
 
@@ -34,7 +27,7 @@
   }
 }
 
-.tm-footer-links {
+.bd-footer-links {
   padding-left: 0;
   margin-bottom: 1rem;
 

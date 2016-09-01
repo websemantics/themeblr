@@ -1,17 +1,14 @@
 //
-// Content guidelines
+// Generic styles
 //
 
-.feature-item {
-  padding-top: 60px;
+a {
   color: $gray;
-  text-align: center;
-  h3 {
-    color: $gray-dark;
-  }
-  .icon {
-    width: 100px;
-    padding: 1.5rem 0;
-    fill: $tm-brand;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: $gray-light;
+    text-decoration: underline;
   }
 }

@@ -12,8 +12,8 @@ host:             0.0.0.0
 port:             9001
 # baseurl:          https://websemantics.github.io/themeblr
 # url:              https://websemantics.github.io/themeblr
-baseurl:          https://themeblr.dev
-url:              https://themeblr.dev
+baseurl:          http://themeblr.dev
+url:              http://themeblr.dev
 encoding:         UTF-8
 
 gems:
