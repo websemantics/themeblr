@@ -1,10 +1,8 @@
 // *****************************************************************************
-// Bootstrap variables overrides
+// Bootstrap mixins overrides
 //
-// Copy variables from `"node_modules/bootstrap/scss/_variables.scss` to this
+// Copy mixins from `"node_modules/bootstrap/scss/_mixins.scss` to this
 // file to override default values.
 // *****************************************************************************
 
-@import "../node_modules/bootstrap/scss/variables";
-
-$fa-font-path: "../fonts/";
+@import "../node_modules/bootstrap/scss/mixins";

@@ -7,11 +7,13 @@ permalink:        pretty
 
 # Server
 source:           docs
-destination:      _gh_pages
+destination:      public
 host:             0.0.0.0
 port:             9001
-baseurl:          https://websemantics.github.io/themeblr
-url:              https://websemantics.github.io/themeblr
+# baseurl:          https://websemantics.github.io/themeblr
+# url:              https://websemantics.github.io/themeblr
+baseurl:          https://themeblr.dev
+url:              https://themeblr.dev
 encoding:         UTF-8
 
 gems:
