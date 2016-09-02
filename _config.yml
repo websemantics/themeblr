@@ -10,10 +10,10 @@ source:           docs
 destination:      public
 host:             0.0.0.0
 port:             9001
+name:             Themeblr
+description:      A powerful CSS framework boilerplate and Bootstrap 4 themes builder
 baseurl:          https://websemantics.github.io/themeblr
-url:              https://websemantics.github.io/themeblr
 # baseurl:          http://themeblr.dev
-# url:              http://themeblr.dev
 encoding:         UTF-8
 
 gems:

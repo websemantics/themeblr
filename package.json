@@ -41,7 +41,7 @@
     }
   },
   "scripts": {
-    "change-version": "node node_modules/bootstrap/grunt/change-version.js",
+    "change-version": "node ./node_modules/bootstrap/grunt/change-version.js",
     "eslint": "eslint --config js/.eslintrc.json js/src && node_modules/bootstrap/",
     "jscs": "jscs --config=js/.jscsrc js/src js/tests/unit docs/assets/js/src grunt Gruntfile.js docs/assets/js/ie-emulation-modes-warning.js docs/assets/js/ie10-viewport-bug-workaround.js",
     "htmlhint": "htmlhint --config docs/.htmlhintrc $npm_package_config_dir_dist ",
@@ -53,7 +53,7 @@
     "deploy:local": "repository=$(echo $npm_package_repository_url | sed 's/.*+//') && cd $npm_package_config_dir_dist && git push --force --quiet $repository ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
     "deploy:travis": "cd $npm_package_config_dir_dist && git push --force --quiet \"https://${GH_TOKEN}@${GH_REF}\" ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
     "predeploy": "rm -rf $npm_package_config_dir_dist && npm run docs -s && cd $npm_package_config_dir_dist && git init && git config user.name $npm_package_config_deploy_name && git config user.email $npm_package_config_deploy_email && git add -A . && git commit -am \"$npm_package_config_deploy_message\" ",
-    "rebrand": "result=${PWD##*/} && node ./node_modules/bootstrap/grunt/change-version.js themeblr $result && node ./node_modules/bootstrap/grunt/change-version.js 1.0.1 1.0.0 ",
+    "rebrand": "node ./node_modules/bootstrap/grunt/change-version.js",
     "build": "grunt",
     "docs": "grunt prep-release"
   },

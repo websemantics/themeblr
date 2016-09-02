@@ -37,15 +37,26 @@ git clone https://github.com/websemantics/themeblr my_project
 npm i
 ```
 
-- Run the `rebrand` script, which will replaces instances of the word `themeblr` in `package.json`, `composer.json` and other files throughout the project with the name of your current project folder name, `my_project`.
+- Run the `brand` script to replace instances of the word `themeblr` throughout the project files (including `package.json`, `composer.json`) with the name of your current project, `my_project`
 
 ```bash
-npm run rebrand
+npm run rebrand -- themeblr my_project
+```
+For your github repository,
+
+```bash
+npm run rebrand -- websemantics your_github_username
 ```
 
-The reminder instances of the word are largely in the `docs` folder which you will have to customize to your project requirements anyways.
+And finally, reset the project release number to `1.0.0` as follows,
 
-Also, this script will also reset the version of the new project to `1.0.0`.
+```bash
+npm run rebrand -- 1.0.1 1.0.0
+```
+
+Notice that, the first release number is Themeblt current version, and `1.0.0` is the initial release of the new project,
+
+- Change project details in `_config.yml` as appropriate,
 
 - Remove `dist` folder from `.gitignore`,
 
