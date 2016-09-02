@@ -25,30 +25,35 @@
 
 To build a new project from Themeblr, go through the following steps,
 
-- Clone or fork [Themeblr(https://github.com/websemantics/themeblr) repository,
+- Clone or fork [Themeblr](https://github.com/websemantics/themeblr) repository,
 
-- Install Node packages
+```bash
+git clone https://github.com/websemantics/themeblr my_project
+```
+
+- Install Node packages,
 
 ```bash
 npm i
 ```
 
-- Run the `rebrand` script
+- Run the `rebrand` script, which will replaces instances of the word `themeblr` in `package.json`, `composer.json` and other files throughout the project with the name of your current project folder name, `my_project`.
 
 ```bash
 npm run rebrand
 ```
 
-This script will replaces most instances of the word `themeblr` in `package.json`, `composer.json` and other files with the name of your current project (folder name). You will need to do search and replace for the rest (TODO: write more about this).
+The reminder instances of the word are largely in the `docs` folder which you will have to customize to your project requirements anyways.
 
-This script will also set the version of your new project to `1.0.0`.
+Also, this script will also reset the version of the new project to `1.0.0`.
 
 - Remove `dist` folder from `.gitignore`,
 
+This is required so that when the project is released as a Node package, the `dist` folder can this be used to access the compiled release. Themeblr itself does not need to keep this folder in version control.
 
+- Start building a fancy brand new [CSS framework](#projects) or a new Bootstrap 4 theme,
 
-
-Start building a fancy brand new [CSS framework](#projects) or a Bootstrap 4 theme by overriding Bootstrap components inside `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
+Do that by overriding Bootstrap components inside `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
 
 Bootstrap provides a comprehensive list of variables for great level of freedom changing the look and feel of the framework.
 
@@ -57,28 +62,40 @@ the theme variables file at `scss/_variables` to apply the desired changes.
 
 For greater level of control, override the individual components styles by adding new style rules to the components files at `scss` folder.
 
+- Compile the `docs`,
 
-## Javascript
+```bash
+npm run docs
+```
 
-Because Themeblr uses Bootstrap Grunt build system, you can write your own jQuery/Bootstrap plugins inside `js` folder. These plugins along-side Bootstrap's will be compiled and distributed.
+The will generate the docs site at `public`,
+
+- If you have Travis setup, run `deploy` script
+
+```bash
+npm run deploy
+```
+
+- Optionally, add new  jQuery/Bootstrap plugins inside `js` folder. These plugins along-side Bootstrap's will be compiled and distributed when the `build` script is executed,
+
+```bash
+npm run build
+```
+
+or simply run the default `grunt` task,
+
+```bash
+grunt
+```
+
+This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
+
+- Finally, other Grunt targets with support for generating docs, publishing and deployment can be found in `Gruntfile.js`.
 
 
 ## Font Awesome
 
 Themeblre brings Bootstrap 4 prepackaged with over 634 [Font Awesome](http://fontawesome.io/) icons that can be styled with any CSS you desire.
-
-
-## build
-
-To build the theme / framework simply run Grunt default target as follows,
-
-```
-grunt
-```
-
-This will generate distribution files at `dist\css` and `dist\js`. It will also copies the distribution files to the docs folder, `docs\dist`.
-
-Other Grunt targets with support for generating docs, publishing and deployment can be found in `Gruntfile.js`.
 
 
 ## Static Pages
