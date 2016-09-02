@@ -3,12 +3,12 @@
 //
 
 a {
-  color: $gray;
+  color: darken($tm-brand, 15);
   text-decoration: none;
 
   &:hover,
   &:active {
-    color: $gray-light;
+    color: $tm-brand;
     text-decoration: underline;
   }
 }

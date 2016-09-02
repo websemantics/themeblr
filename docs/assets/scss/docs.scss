@@ -18,6 +18,7 @@
 // Local docs variables
 $tm-brand: #0c4b79;
 $tm-brand-light: lighten(desaturate(adjust-hue($tm-brand, 0.0130), 0.3554), 9.8039);;
+$tm-star-yellow: #F5CC7A;
 
 // Load docs components
 @import "brand";
@@ -26,3 +27,4 @@ $tm-brand-light: lighten(desaturate(adjust-hue($tm-brand, 0.0130), 0.3554), 9.80
 @import "featurettes";
 @import "content";
 @import "footer";
+@import "bragit";

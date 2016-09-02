@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0
+## 1.0.1
  * Grunt build system compatible with Bootstrap
  * Merge distribution files (css/js) with Bootstrap
  * Ready for custom jQuery/Bootstrap plugins development

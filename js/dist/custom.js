@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------
- * Themeblr (v1.0.0): custom.js
+ * Themeblr (v1.0.1): custom.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -20,7 +20,7 @@ var Custom = (function ($) {
      */
 
     var NAME = 'custom';
-    var VERSION = '1.0.0';
+    var VERSION = '1.0.1';
     var DATA_KEY = 'bs.custom';
     var EVENT_KEY = '.' + DATA_KEY;
     var DATA_API_KEY = '.data-api';

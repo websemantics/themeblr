@@ -20,5 +20,5 @@ gems:
   - jekyll-sitemap
 
 # Custom vars
-current_version:  1.0.0
+current_version:  1.0.1
 repo:             https://github.com/websemantics/themeblr

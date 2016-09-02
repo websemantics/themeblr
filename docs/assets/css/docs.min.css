@@ -44,21 +44,6 @@
   color: #eceeef;
 }
 
-.bd-masthead .btn {
-  width: 100%;
-  padding: 1rem 2rem;
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: #eceeef;
-  border-color: #eceeef;
-}
-
-.bd-masthead .btn:hover {
-  color: #0c4b79;
-  background-color: #eceeef;
-  border-color: #eceeef;
-}
-
 .bd-masthead .carbonad {
   margin-bottom: -2rem !important;
 }
@@ -78,7 +63,7 @@
 
 @media (min-width: 768px) {
   .bd-masthead {
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
   }
   .bd-masthead .bd-header {
     margin-bottom: 4rem;
@@ -201,12 +186,12 @@
 }
 
 a {
-  color: #55595c;
+  color: #052033;
   text-decoration: none;
 }
 
 a:hover, a:active {
-  color: #818a91;
+  color: #0c4b79;
   text-decoration: underline;
 }
 
@@ -248,6 +233,29 @@ a:hover, a:active {
 
 .bd-footer-links li + li {
   margin-left: 1rem;
+}
+
+.bd-masthead .ui.button {
+  color: #eceeef;
+  background-color: transparent;
+  box-shadow: 0 0 0 1px #eceeef inset;
+}
+
+.bd-masthead .ui.labeled.button > .label {
+  color: #eceeef;
+  background-color: transparent;
+  border-color: #eceeef;
+}
+
+.bd-masthead .ui.button:focus, .bd-masthead .ui.button:hover,
+.bd-masthead .ui.labeled.button > .label:focus,
+.bd-masthead .ui.labeled.button > .label:hover {
+  color: #0c4b79;
+  background-color: #eceeef;
+}
+
+.ui.labeled .ui.button .star.icon {
+  color: #F5CC7A;
 }
 
 /*# sourceMappingURL=docs.min.css.map */
