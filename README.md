@@ -43,6 +43,10 @@ This script will replaces most instances of the word `themeblr` in `package.json
 
 This script will also set the version of your new project to `1.0.0`.
 
+- Remove `dist` folder from `.gitignore`,
+
+
+
 
 Start building a fancy brand new [CSS framework](#projects) or a Bootstrap 4 theme by overriding Bootstrap components inside `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
 

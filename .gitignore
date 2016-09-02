@@ -4,7 +4,7 @@ public
 _site
 docs/assets/css
 docs/dist
-docs/assets/js/docs.min.js
+docs.min.js
 
 # Ignore js files
 js/dist
@@ -58,3 +58,4 @@ docs/.jekyll-metadata
 # Folders to ignore
 bower_components
 node_modules
+dist
