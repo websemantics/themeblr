@@ -27,7 +27,22 @@ To build a new project from Themeblr, go through the following steps,
 
 - Clone or fork [Themeblr(https://github.com/websemantics/themeblr) repository,
 
- and change `package.json` details  (name, version etc) to suit your requirements.
+- Install Node packages
+
+```bash
+npm i
+```
+
+- Run the `rebrand` script
+
+```bash
+npm run rebrand
+```
+
+This script will replaces most instances of the word `themeblr` in `package.json`, `composer.json` and other files with the name of your current project (folder name). You will need to do search and replace for the rest (TODO: write more about this).
+
+This script will also set the version of your new project to `1.0.0`.
+
 
 Start building a fancy brand new [CSS framework](#projects) or a Bootstrap 4 theme by overriding Bootstrap components inside `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
 

@@ -4,15 +4,9 @@
 <meta name="description" content="A powerful CSS framework boilerplate and Bootstrap 4 themes builder.">
 <meta name="author" content="Adnan M.Sagar, PhD, and Bootstrap contributors">
 
-<title>
-  {% if page.layout == "home" %}
-    {{ page.title }}
-  {% else %}
-    {{ page.title }} &middot; Themeblr
-  {% endif %}
-</title>
+<title>{{ page.title }}</title>
 
-<!-- Themeblr core CSS -->
+<!-- Core CSS -->
 {% if site.github %}
   <link href="{{ site.baseurl }}/dist/css/themeblr.min.css" rel="stylesheet">
   {% if page.title == "Flexbox grid system" %}
