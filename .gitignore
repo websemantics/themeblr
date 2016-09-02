@@ -3,7 +3,11 @@ _gh_pages
 public
 _site
 docs/assets/css
-docs/assets/dist
+docs/dist
+docs/assets/js/docs.min.js
+
+# Ignore js files
+js/dist
 
 # Ignore ruby files
 .ruby-version
@@ -54,4 +58,3 @@ docs/.jekyll-metadata
 # Folders to ignore
 bower_components
 node_modules
-dist

@@ -16,14 +16,18 @@
           Build Bootstrap Stuff the Right Way!
 
 ```
->  Whether building a Bootstrap 4 theme or a brand new CSS toolkit, Themeblr has your back. Themeblr provides an easy way to extend Bootstrap 4 styles and plugins using Bootstrap 4 Grunt system. Themeblr can also be used as the basis for developing new CSS frameworks, for example [Brimer](https://github.com/websemantics/Brimer) and [Strapant](https://github.com/websemantics/strapant). Huge thanks to the creators and authors of [Bootstrap](https://getbootstrap.com/) for creating such a magnificent framework and build system.
+>  Whether building a Bootstrap 4 theme or a brand new CSS toolkit, Themeblr has your back. Themeblr provides an easy way to extend Bootstrap 4 styles and plugins using Bootstrap 4 Grunt system. [Brimer](https://github.com/websemantics/Brimer), [StrapAnt](https://github.com/websemantics/strapant) and [Semantic Strap](https://github.com/websemantics/semantic-strap) are few examples of using Themeblr to build brand new CSS toolkits. Huge thanks to the creators and authors of [Bootstrap](https://getbootstrap.com/) for creating such a magnificent framework and build system.
 
 ### [Features](http://websemantics.github.io/themeblr)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/themeblr/issues)
 
 
 ## Getting Started
 
-First, clone or fork this repository and change `package.json` details  (name, version etc) to suit your requirements.
+To build a new project from Themeblr, go through the following steps,
+
+- Clone or fork [Themeblr(https://github.com/websemantics/themeblr) repository,
+
+ and change `package.json` details  (name, version etc) to suit your requirements.
 
 Start building a fancy brand new [CSS framework](#projects) or a Bootstrap 4 theme by overriding Bootstrap components inside `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
 
@@ -38,6 +42,11 @@ For greater level of control, override the individual components styles by addin
 ## Javascript
 
 Because Themeblr uses Bootstrap Grunt build system, you can write your own jQuery/Bootstrap plugins inside `js` folder. These plugins along-side Bootstrap's will be compiled and distributed.
+
+
+## Font Awesome
+
+Themeblre brings Bootstrap 4 prepackaged with over 634 [Font Awesome](http://fontawesome.io/) icons that can be styled with any CSS you desire.
 
 
 ## build
@@ -75,6 +84,9 @@ These are few projects built on Themeblr,
 [Strapant](https://github.com/websemantics/strapant), [Ant Design](http://ant.design/) inspired CSS framework built with Bootstrap 4.
 
 [Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap atoms.
+
+[Semantic Strap](https://github.com/websemantics/semantic-strap), Semantic-UI inspired theme for Twitter Bootstrap 4.
+
 
 ## Resource
 
