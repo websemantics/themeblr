@@ -326,17 +326,17 @@ module.exports = function (grunt) {
       default_options: {
         bsFiles: {
           src: [
-            "dist/css/*.css",
-            "docs/assets/css/*.css",
-            "dist/js/*.js",
-            "docs/assets/js/*.js",
-            "docs/*.html"
+            "./<%= pkg.config.dir.dist %>/dist/css/*.css",
+            "./<%= pkg.config.dir.dist %>/assets/css/*.css",
+            "./<%= pkg.config.dir.dist %>/dist/js/*.js",
+            "./<%= pkg.config.dir.dist %>/assets/js/*.js",
+            "./<%= pkg.config.dir.dist %>/*.html"
           ]
         },
         options: {
           watchTask: true,
           server: {
-            baseDir: "./_gh_pages"
+            baseDir: "./<%= pkg.config.dir.dist %>"
           }
         }
       }
