@@ -101,11 +101,13 @@ grunt
 
 This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
 
-- Finally, for seamless development run watch `script`,
+- Finally, for seamless development run the watch `script`,
 
 ```bash
 npm run watch
 ```
+
+This will recompile and synch with the browser when changes in the project files are detected,
 
 There are other Grunt targets with support for generating docs, publishing and deployment can be found in `Gruntfile.js`.
 
