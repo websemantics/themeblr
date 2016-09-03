@@ -27,88 +27,88 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
 - Clone or fork [Themeblr](https://github.com/websemantics/themeblr) repository into your new project,  `my_project`
 
-```bash
-git clone https://github.com/websemantics/themeblr my_project
-```
+  ```bash
+  git clone https://github.com/websemantics/themeblr my_project
+  ```
 
 - Install Node packages,
 
-```bash
-npm i
-```
+  ```bash
+  npm i
+  ```
 
 - Run the `rebrand` script to customize your new project,
 
-```bash
-npm run rebrand -- themeblr my_project
-```
+  ```bash
+  npm run rebrand -- themeblr my_project
+  ```
 
-This will replace instances of the word `themeblr` throughout the project files (including `package.json`, `composer.json`) with the name of the current project, `my_project`,
+  This will replace instances of the word `themeblr` throughout the project files (including `package.json`, `composer.json`) with the name of the current project, `my_project`,
 
-Replace all instance of `websemantics` with your Github username,
+  Replace all instance of `websemantics` with your Github username,
 
-```bash
-npm run rebrand -- websemantics username
-```
+  ```bash
+  npm run rebrand -- websemantics username
+  ```
 
-Lastly, reset the project release number to `1.0.0` as follows,
+  Lastly, reset the project release number to `1.0.0` as follows,
 
-```bash
-npm run rebrand -- 1.0.1 1.0.0
-```
+  ```bash
+  npm run rebrand -- 1.0.1 1.0.0
+  ```
 
-Notice that the first number is Themeblr current version, and `1.0.0` is the initial release of the new project,
+  Notice that the first number is Themeblr current version, and `1.0.0` is the initial release of the new project,
 
 - Change project details in `_config.yml` as appropriate,
 
 - Remove `dist` folder from `.gitignore`,
 
-This is required so that when the project is released as a Node package, the `dist` folder can this be used to access the compiled release of the toolkit. Themeblr itself does not need to keep this folder in version control.
+  This is required so that when the project is released as a Node package, the `dist` folder can this be used to access the compiled release of the toolkit. Themeblr itself does not need to keep this folder in version control.
 
 - Start building a fancy brand new [CSS framework](#projects) or a new Bootstrap 4 theme,
 
-This can be done by overriding Bootstrap components inside the `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
+  This can be done by overriding Bootstrap components inside the `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
 
-Bootstrap provides a great level of freedom changing its look and feel with a comprehensive list of variables. Copy variables from `node_modules/bootstrap/scss/_variables.scss` to
-the theme variables file at `scss/_variables` and apply the desired changes,
+  Bootstrap provides a great level of freedom changing its look and feel with a comprehensive list of variables. Copy variables from `node_modules/bootstrap/scss/_variables.scss` to
+  the theme variables file at `scss/_variables` and apply the desired changes,
 
-Override the individual components styles by adding new style rules to the components files at `scss` folder,
+  Override the individual components styles by adding new style rules to the components files at `scss` folder,
 
 - Compile the `docs` folder into project pages,
 
-```bash
-npm run prep-release
-```
+  ```bash
+  npm run prep-release
+  ```
 
-The will generate the docs site at `_gh_pages`,
+  The will generate the docs site at `_gh_pages`,
 
 - If you have Travis setup, run the `deploy` script
 
-```bash
-npm run deploy
-```
+  ```bash
+  npm run deploy
+  ```
 
 - Optionally, add new  jQuery/Bootstrap plugins inside `js` folder. These plugins along-side Bootstrap's will be compiled and distributed when the `build` script is executed,
 
-```bash
-npm run build
-```
+  ```bash
+  npm run build
+  ```
 
-Or simply run the default `grunt` task,
+  Or simply run the default `grunt` task,
 
-```bash
-grunt
-```
+  ```bash
+  grunt
+  ```
 
-This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
+  This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
 
 - Finally, for seamless development run the `watch` script,
 
-```bash
-npm run watch
-```
+  ```bash
+  npm run watch
+  ```
 
-This will recompile and sync with the browser when changes in the project pages are detected,
+  This will recompile and sync with the browser when changes in the project pages are detected,
 
 There are other Grunt targets with support for generating docs, publishing and deployment can be found in `Gruntfile.js`.
 
