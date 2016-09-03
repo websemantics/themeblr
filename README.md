@@ -102,7 +102,7 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
   This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
 
-10.g Finally, for seamless development run the `watch` script,
+10. Finally, for seamless development run the `watch` script,
 
   ```bash
   npm run watch
@@ -175,7 +175,7 @@ We are more than happy to accept external contributions to the project in the fo
 
 
 ## ToDo
-
+g
 There are quite a number of [steps](#getting-started) to get a Themeblr instance customized to your requirements. An app generator, perhaps using [Yeoman](https://github.com/yeoman/generator) can make this process less painful. Oh well, maybe one day!
 
 
