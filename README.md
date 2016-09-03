@@ -25,19 +25,19 @@
 
 To build a new project from [Themeblr](https://github.com/websemantics/themeblr), go through the following steps,
 
-- Clone or fork [Themeblr](https://github.com/websemantics/themeblr) repository into your new project,  `my_project`
+1. Clone or fork [Themeblr](https://github.com/websemantics/themeblr) repository into your new project,  `my_project`
 
   ```bash
   git clone https://github.com/websemantics/themeblr my_project
   ```
 
-- Install Node packages,
+2. Install Node packages,
 
   ```bash
   npm i
   ```
 
-- Run the `rebrand` script to customize your new project,
+3. Run the `rebrand` script to customize your new project,
 
   ```bash
   npm run rebrand -- themeblr my_project
@@ -59,13 +59,13 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
   Notice that the first number is Themeblr current version, and `1.0.0` is the initial release of the new project,
 
-- Change project details in `_config.yml` as appropriate,
+4. Change project details in `_config.yml` as appropriate,
 
-- Remove `dist` folder from `.gitignore`,
+5. Remove `dist` folder from `.gitignore`,
 
   This is required so that when the project is released as a Node package, the `dist` folder can this be used to access the compiled release of the toolkit. Themeblr itself does not need to keep this folder in version control.
 
-- Start building a fancy brand new [CSS framework](#projects) or a new Bootstrap 4 theme,
+6. Start building a fancy brand new [CSS framework](#projects) or a new Bootstrap 4 theme,
 
   This can be done by overriding Bootstrap components inside the `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
 
@@ -74,7 +74,7 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
   Override the individual components styles by adding new style rules to the components files at `scss` folder,
 
-- Compile the `docs` folder into project pages,
+7. Compile the `docs` folder into project pages,
 
   ```bash
   npm run prep-release
@@ -82,13 +82,13 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
   The will generate the docs site at `_gh_pages`,
 
-- If you have Travis setup, run the `deploy` script
+8. If you have Travis setup, run the `deploy` script
 
   ```bash
   npm run deploy
   ```
 
-- Optionally, add new  jQuery/Bootstrap plugins inside `js` folder. These plugins along-side Bootstrap's will be compiled and distributed when the `build` script is executed,
+9. Optionally, add new  jQuery/Bootstrap plugins inside `js` folder. These plugins along-side Bootstrap's will be compiled and distributed when the `build` script is executed,
 
   ```bash
   npm run build
@@ -102,7 +102,7 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
   This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
 
-- Finally, for seamless development run the `watch` script,
+10. Finally, for seamless development run the `watch` script,
 
   ```bash
   npm run watch
