@@ -160,6 +160,11 @@ There are quite a number of [steps](#getting-started) to get a Themeblr instance
 [Color calculator](http://razorjam.github.io/sasscolourfunctioncalculator/), sass color function for calculating the Sass color function required to get from one color to another.
 
 
+## Screenshot
+
+![Themeblr](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/themeblr.png)
+
+
 ## Support
 
 Need help or have a question? post a questions at [StackOverflow](https://stackoverflow.com/questions/tagged/themeblr)
