@@ -159,7 +159,7 @@ These are few projects built on Themeblr,
 
 [![Themeblr](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/themeblr.png)](https://websemantics.github.io/themeblr/)
 
-Love the Github repository buttons used and want to use them to showcase your own GitHub repositories? the name is Bragit, [Brag It](http://websemantics.github.io/bragit/).
+Love the Github *repository buttons* used and want to use them to showcase your own GitHub repositories? the name is Bragit, [Brag It](http://websemantics.github.io/bragit/).
 
 
 ## Support
