@@ -144,11 +144,6 @@ These are few projects built on Themeblr,
 [Semantic Strap](https://github.com/websemantics/semantic-strap), Bootstrap 4 CSS toolkit inspired by [Semantic-UI](http://semantic-ui.com/),
 
 
-## TODO
-
-There are quite a number of [steps](#getting-started) to get a Themeblr instance customized to your requirements. An app generator, perhaps using [Yeoman](https://github.com/yeoman/generator) can make this process less painful. Oh well, maybe one day!
-
-
 ## Resource
 
 [Bootstrap 4](http://v4-alpha.getbootstrap.com/), the most popular HTML, CSS, and JS framework in the world for building responsive, mobile-first projects on the web.
@@ -177,6 +172,11 @@ Need help or have a question? post a questions at [StackOverflow](https://stacko
 ## Contributions
 
 We are more than happy to accept external contributions to the project in the form of feedback, bug reports and even better - pull requests :)
+
+
+## ToDo
+
+There are quite a number of [steps](#getting-started) to get a Themeblr instance customized to your requirements. An app generator, perhaps using [Yeoman](https://github.com/yeoman/generator) can make this process less painful. Oh well, maybe one day!
 
 
 ## Credits
