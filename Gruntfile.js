@@ -253,6 +253,10 @@ module.exports = function (grunt) {
       docs: {
         files: 'docs/assets/scss/**/*.scss',
         tasks: ['dist-css', 'docs']
+      },
+      html: {
+        files: 'docs/**/*.html',
+        tasks: ['default']
       }
     },
 
@@ -315,6 +319,26 @@ module.exports = function (grunt) {
             dest: '<%= pkg.name %>-<%= pkg.version %>-dist'
           }
         ]
+      }
+    },
+
+    browserSync: {
+      default_options: {
+        bsFiles: {
+          src: [
+            "dist/css/*.css",
+            "docs/assets/css/*.css",
+            "dist/js/*.js",
+            "docs/assets/js/*.js",
+            "docs/*.html"
+          ]
+        },
+        options: {
+          watchTask: true,
+          server: {
+            baseDir: "./_gh_pages"
+          }
+        }
       }
     }
 
@@ -385,6 +409,9 @@ module.exports = function (grunt) {
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'copy:fonts', 'test']);
+
+  // Watch all task.
+  grunt.registerTask('watch-all', ['browserSync', 'watch']);
 
   // Docs task.
   grunt.registerTask('docs-css', ['cssmin:docs', 'exec:postcss-docs']);

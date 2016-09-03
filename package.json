@@ -37,7 +37,7 @@
     },
     "dir": {
       "src": "./src/",
-      "dist": "./public/"
+      "dist": "./_gh_pages/"
     }
   },
   "scripts": {
@@ -54,8 +54,9 @@
     "deploy:travis": "cd $npm_package_config_dir_dist && git push --force --quiet \"https://${GH_TOKEN}@${GH_REF}\" ${npm_package_config_deploy_branch} > /dev/null 2>&1 ",
     "predeploy": "rm -rf $npm_package_config_dir_dist && npm run docs -s && cd $npm_package_config_dir_dist && git init && git config user.name $npm_package_config_deploy_name && git config user.email $npm_package_config_deploy_email && git add -A . && git commit -am \"$npm_package_config_deploy_message\" ",
     "rebrand": "node ./node_modules/bootstrap/grunt/change-version.js",
-    "build": "grunt",
-    "docs": "grunt prep-release"
+    "prep-release": "grunt prep-release",
+    "watch": "grunt watch-all",
+    "build": "grunt"
   },
   "style": "dist/css/themeblr.css",
   "sass": "scss/themeblr.scss",
@@ -76,6 +77,7 @@
     "eslint": "^3.0.0",
     "grunt": "^1.0.1",
     "grunt-babel": "^5.0.3",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-build-control": "^0.7.0",
     "grunt-contrib-clean": "^1.0.0",
     "grunt-contrib-compress": "^1.1.0",

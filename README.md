@@ -73,15 +73,15 @@ the theme variables file at `scss/_variables` to apply the desired changes.
 
 For greater level of control, override the individual components styles by adding new style rules to the components files at `scss` folder.
 
-- Compile the `docs`,
+- Compile the `docs` files,
 
 ```bash
 npm run docs
 ```
 
-The will generate the docs site at `public`,
+The will generate the docs site at `_gh_pages`,
 
-- If you have Travis setup, run `deploy` script
+- If you have Travis setup, run the `deploy` script
 
 ```bash
 npm run deploy
@@ -101,7 +101,13 @@ grunt
 
 This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
 
-- Finally, other Grunt targets with support for generating docs, publishing and deployment can be found in `Gruntfile.js`.
+- Finally, for seamless development run watch `script`,
+
+```bash
+npm run watch
+```
+
+There are other Grunt targets with support for generating docs, publishing and deployment can be found in `Gruntfile.js`.
 
 
 ## Font Awesome
@@ -111,14 +117,14 @@ Themeblre brings Bootstrap 4 prepackaged with over 634 [Font Awesome](http://fon
 
 ## Static Pages
 
-This project supports generating static content for Github Pages. The original project, [Bootstrap](https://github.com/twbs/bootstrap) used this feature to generate documentation.
+This project supports generating static content for Github Pages. The original [Bootstrap](https://github.com/twbs/bootstrap) project used this feature to generate documentation.
 
 Grunt copies the theme built `css` and `js` files to `docs/dist` and processes any `scss` / `js` files in `docs/assets/scss` / `docs/assets/js` into  `docs/assets/css` and  `docs/assets/js` respectively . You might also want to uncomment `postcss-docs` script in `package.js` to enable docs postcss processing.
 
-To build the docs separately run,
+To build the docs pages run,
 
 ```
-grunt docs
+npm run prep-release
 ```
 
 The following section provides examples of projects using this feature to generate project static pages.
