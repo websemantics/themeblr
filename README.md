@@ -73,10 +73,10 @@ the theme variables file at `scss/_variables` to apply the desired changes.
 
 For greater level of control, override the individual components styles by adding new style rules to the components files at `scss` folder.
 
-- Compile the `docs` files,
+- Compile the `docs` files into project pages,
 
 ```bash
-npm run docs
+npm run prep-release
 ```
 
 The will generate the docs site at `_gh_pages`,
