@@ -39,25 +39,26 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
 3. Run the `rebrand` script to customize your new project,
 
-  ```bash
-  npm run rebrand -- themeblr my_project
-  ```
+  * Replace instances of the word `themeblr` throughout the project files (including `package.json`, `composer.json`) with the name of the current project, `my_project`,
 
-  This will replace instances of the word `themeblr` throughout the project files (including `package.json`, `composer.json`) with the name of the current project, `my_project`,
+    ```bash
+    npm run rebrand -- themeblr my_project
+    ```
 
-  Replace all instance of `websemantics` with your Github username,
+  * Replace all instance of `websemantics` with your Github `username`,
 
-  ```bash
-  npm run rebrand -- websemantics username
-  ```
+    ```bash
+    npm run rebrand -- websemantics username
+    ```
 
-  Lastly, reset the project release number to `1.0.0` as follows,
+  * Reset the project release number to `1.0.0` as follows,
 
-  ```bash
-  npm run rebrand -- 1.0.1 1.0.0
-  ```
+    ```bash
+    npm run rebrand -- 1.0.1 1.0.0
+    ```
+    Notice that the first number is Themeblr's current version, and `1.0.0` is the initial release of the new project,
 
-  Notice that the first number is Themeblr current version, and `1.0.0` is the initial release of the new project,
+  * Rename `scss/themeblr.scss` to `scss/my_project.scss`
 
 4. Change project details in `_config.yml` as appropriate,
 
