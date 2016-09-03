@@ -65,7 +65,7 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
   This is required so that when the project is released as a Node package, the `dist` folder can this be used to access the compiled release of the toolkit. Themeblr itself does not need to keep this folder in version control.
 
-6. Start building a fancy brand new [CSS framework](#projects) or a new Bootstrap 4 theme,
+6. Start building a fancy brand new [CSS framework](#themes-and-toolkits) or a new Bootstrap 4 theme,
 
   This can be done by overriding Bootstrap components inside the `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
 
@@ -102,7 +102,7 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
   This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
 
-10. Finally, for seamless development run the `watch` script,
+10.g Finally, for seamless development run the `watch` script,
 
   ```bash
   npm run watch
@@ -133,7 +133,7 @@ npm run prep-release
 The following section provides examples of projects using this feature to generate project static pages.
 
 
-## Projects
+## Themes and Toolkits
 
 These are few projects built on Themeblr,
 
