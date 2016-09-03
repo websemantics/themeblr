@@ -102,7 +102,7 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 
   This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
 
-10. Finally, for seamless development run the `watch` script,
+10.g Finally, for seamless development run the `watch` script,
 
   ```bash
   npm run watch
@@ -137,7 +137,7 @@ The following section provides examples of projects using this feature to genera
 
 These are few projects built on Themeblr,
 
-[Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap 4 matter.
+[Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap 4.
 
 [Ant Strap](https://github.com/websemantics/strapant), Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/).
 
