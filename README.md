@@ -162,7 +162,7 @@ There are quite a number of [steps](#getting-started) to get a Themeblr instance
 
 ## Screenshot
 
-![Themeblr](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/themeblr.png)
+[![Themeblr](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/themeblr.png)](https://websemantics.github.io/themeblr/)
 
 
 ## Support
