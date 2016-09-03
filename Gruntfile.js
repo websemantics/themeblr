@@ -248,15 +248,15 @@ module.exports = function (grunt) {
       },
       sass: {
         files: 'scss/**/*.scss',
-        tasks: ['dist-css', 'docs']
+        tasks: ['dist-css', 'docs', 'docs-github']
       },
       docs: {
         files: 'docs/assets/scss/**/*.scss',
-        tasks: ['dist-css', 'docs']
+        tasks: ['dist-css', 'docs', 'docs-github']
       },
       html: {
         files: 'docs/**/*.html',
-        tasks: ['default']
+        tasks: ['docs-github']
       }
     },
 
@@ -326,24 +326,23 @@ module.exports = function (grunt) {
       default_options: {
         bsFiles: {
           src: [
-            "./<%= pkg.config.dir.dist %>/dist/css/*.css",
-            "./<%= pkg.config.dir.dist %>/assets/css/*.css",
-            "./<%= pkg.config.dir.dist %>/dist/js/*.js",
-            "./<%= pkg.config.dir.dist %>/assets/js/*.js",
-            "./<%= pkg.config.dir.dist %>/*.html"
+            "<%= pkg.config.dir.dist %>/dist/css/*.css",
+            "<%= pkg.config.dir.dist %>/assets/css/*.css",
+            "<%= pkg.config.dir.dist %>/dist/js/*.js",
+            "<%= pkg.config.dir.dist %>/assets/js/*.js",
+            "<%= pkg.config.dir.dist %>/*.html"
           ]
         },
         options: {
           watchTask: true,
           server: {
-            baseDir: "./<%= pkg.config.dir.dist %>"
+            baseDir: "<%= pkg.config.dir.dist %>"
           }
         }
       }
     }
 
   });
-
 
   // These plugins provide necessary tasks.
   require('load-grunt-tasks')(grunt, { scope: 'devDependencies',
