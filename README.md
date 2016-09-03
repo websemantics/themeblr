@@ -136,11 +136,11 @@ The following section provides examples of projects using this feature to genera
 
 These are few projects built on Themeblr,
 
-[Strapant](https://github.com/websemantics/strapant), [Ant Design](http://ant.design/) inspired CSS framework built with Bootstrap 4.
+[Ant Strap](https://github.com/websemantics/strapant), Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/).
 
-[Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap atoms.
+[Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap 4 matter.
 
-[Semantic Strap](https://github.com/websemantics/semantic-strap), Semantic-UI inspired theme for Twitter Bootstrap 4.
+[Semantic Strap](https://github.com/websemantics/semantic-strap), Bootstrap 4 CSS toolkit inspired by [Semantic-UI](http://semantic-ui.com/),
 
 
 ## Resource
