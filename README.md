@@ -16,16 +16,16 @@
           Build Bootstrap Stuff the Right Way!
 
 ```
->  Whether building a Bootstrap 4 theme or a brand new CSS toolkit, Themeblr has your back. Themeblr provides an easy way to extend Bootstrap 4 styles and plugins using Bootstrap 4 Grunt system. [Brimer](https://github.com/websemantics/Brimer), [StrapAnt](https://github.com/websemantics/strapant) and [Semantic Strap](https://github.com/websemantics/semantic-strap) are few examples of using Themeblr to build brand new CSS toolkits. Huge thanks to the creators and authors of [Bootstrap](https://getbootstrap.com/) for creating such a magnificent framework and build system.
+>  Whether building a Bootstrap 4 theme or a brand new CSS toolkit, Themeblr has your back. Themeblr provides an easy way to extend Bootstrap 4 styles and plugins using Bootstrap 4 Grunt system. [Brimer](https://github.com/websemantics/Brimer), [Ant Strap](https://github.com/websemantics/ant-strap) and [Semantic Strap](https://github.com/websemantics/semantic-strap) are examples of using Themeblr to build brand new CSS toolkits. Huge thanks to the creators and authors of [Bootstrap](https://getbootstrap.com/) for creating such a magnificent framework and build system.
 
 ### [Features](http://websemantics.github.io/themeblr)&nbsp;&nbsp;&nbsp;[Getting Started](#getting-started)&nbsp;&nbsp;&nbsp;[Submit Issue](https://github.com/websemantics/themeblr/issues)
 
 
 ## Getting Started
 
-To build a new project from Themeblr, go through the following steps,
+To build a new project from [Themeblr](https://github.com/websemantics/themeblr), go through the following steps,
 
-- Clone or fork [Themeblr](https://github.com/websemantics/themeblr) repository,
+- Clone or fork [Themeblr](https://github.com/websemantics/themeblr) repository into your new project,  `my_project`
 
 ```bash
 git clone https://github.com/websemantics/themeblr my_project
@@ -37,43 +37,44 @@ git clone https://github.com/websemantics/themeblr my_project
 npm i
 ```
 
-- Run the `brand` script to replace instances of the word `themeblr` throughout the project files (including `package.json`, `composer.json`) with the name of your current project, `my_project`
+- Run the `rebrand` script to customize your new project,
 
 ```bash
 npm run rebrand -- themeblr my_project
 ```
-For your github repository,
+
+This will replace instances of the word `themeblr` throughout the project files (including `package.json`, `composer.json`) with the name of the current project, `my_project`,
+
+Replace all instance of `websemantics` with your Github username,
 
 ```bash
-npm run rebrand -- websemantics your_github_username
+npm run rebrand -- websemantics username
 ```
 
-And finally, reset the project release number to `1.0.0` as follows,
+Lastly, reset the project release number to `1.0.0` as follows,
 
 ```bash
 npm run rebrand -- 1.0.1 1.0.0
 ```
 
-Notice that, the first release number is Themeblt current version, and `1.0.0` is the initial release of the new project,
+Notice that the first number is Themeblr current version, and `1.0.0` is the initial release of the new project,
 
 - Change project details in `_config.yml` as appropriate,
 
 - Remove `dist` folder from `.gitignore`,
 
-This is required so that when the project is released as a Node package, the `dist` folder can this be used to access the compiled release. Themeblr itself does not need to keep this folder in version control.
+This is required so that when the project is released as a Node package, the `dist` folder can this be used to access the compiled release of the toolkit. Themeblr itself does not need to keep this folder in version control.
 
 - Start building a fancy brand new [CSS framework](#projects) or a new Bootstrap 4 theme,
 
-Do that by overriding Bootstrap components inside `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
+This can be done by overriding Bootstrap components inside the `scss` folder, and or creating new jQuery/Bootstrap plugins inside `js` folder.
 
-Bootstrap provides a comprehensive list of variables for great level of freedom changing the look and feel of the framework.
+Bootstrap provides a great level of freedom changing its look and feel with a comprehensive list of variables. Copy variables from `node_modules/bootstrap/scss/_variables.scss` to
+the theme variables file at `scss/_variables` and apply the desired changes,
 
-Copy variables from `node_modules/bootstrap/scss/_variables.scss` to
-the theme variables file at `scss/_variables` to apply the desired changes.
+Override the individual components styles by adding new style rules to the components files at `scss` folder,
 
-For greater level of control, override the individual components styles by adding new style rules to the components files at `scss` folder.
-
-- Compile the `docs` files into project pages,
+- Compile the `docs` folder into project pages,
 
 ```bash
 npm run prep-release
@@ -93,7 +94,7 @@ npm run deploy
 npm run build
 ```
 
-or simply run the default `grunt` task,
+Or simply run the default `grunt` task,
 
 ```bash
 grunt
@@ -101,27 +102,27 @@ grunt
 
 This will generate distribution files at `dist\css` and `dist\js`. It will also copy the distribution files to the docs folder, `docs\dist` and copy Font Awesome to `dist\fonts`.
 
-- Finally, for seamless development run the watch `script`,
+- Finally, for seamless development run the `watch` script,
 
 ```bash
 npm run watch
 ```
 
-This will recompile and synch with the browser when changes in the project files are detected,
+This will recompile and sync with the browser when changes in the project pages are detected,
 
 There are other Grunt targets with support for generating docs, publishing and deployment can be found in `Gruntfile.js`.
 
 
 ## Font Awesome
 
-Themeblre brings Bootstrap 4 prepackaged with over 634 [Font Awesome](http://fontawesome.io/) icons that can be styled with any CSS you desire.
+Themeblre brings Bootstrap 4 prepackaged with over 634 [Font Awesome](http://fontawesome.io/) icons that can be styled with any CSS you desire, obviously.
 
 
 ## Static Pages
 
-This project supports generating static content for Github Pages. The original [Bootstrap](https://github.com/twbs/bootstrap) project used this feature to generate documentation.
+This project supports generating static content for Github Pages. The original [Bootstrap](https://github.com/twbs/bootstrap) project used this feature to generate documentation,
 
-Grunt copies the theme built `css` and `js` files to `docs/dist` and processes any `scss` / `js` files in `docs/assets/scss` / `docs/assets/js` into  `docs/assets/css` and  `docs/assets/js` respectively . You might also want to uncomment `postcss-docs` script in `package.js` to enable docs postcss processing.
+Grunt copies the theme built `css` and `js` files to `docs/dist` and processes any `scss` / `js` files in `docs/assets/scss` / `docs/assets/js` into  `docs/assets/css` and  `docs/assets/js` respectively . You might also want to uncomment `postcss-docs` script in `package.js` to enable `docs` postcss processing.
 
 To build the docs pages run,
 
@@ -136,11 +137,16 @@ The following section provides examples of projects using this feature to genera
 
 These are few projects built on Themeblr,
 
-[Ant Strap](https://github.com/websemantics/strapant), Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/).
-
 [Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap 4 matter.
 
+[Ant Strap](https://github.com/websemantics/strapant), Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/).
+
 [Semantic Strap](https://github.com/websemantics/semantic-strap), Bootstrap 4 CSS toolkit inspired by [Semantic-UI](http://semantic-ui.com/),
+
+
+## TODO
+
+There are quite a number of [steps](#getting-started) to get a Themeblr instance customized to your requirements. An app generator, perhaps using [Yeoman](https://github.com/yeoman/generator) can make this process less painful. Oh well, maybe one day!
 
 
 ## Resource
