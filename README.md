@@ -145,11 +145,11 @@ The following section provides examples of projects using this feature to genera
 
 These are few projects built on Themeblr,
 
-| Brimer        | Ant Strap           | Semantic Strap  |
-| ------------- |:-------------:| -----:|
+| BRIMER        | ANT STRAP           | SEMANTIC STRAP  |
+| ------------- |---------------| ------|
 | [![Brimer](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/brimer.png)](https://websemantics.github.io/brimer/) | [![Ant Strap](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/ant-strap.png)](https://websemantics.github.io/ant-strap/) | [![Semantic Strap](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/semantic-strap.png)](https://websemantics.github.io/semantic-strap/) |
 | The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap 4 | Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/) | Bootstrap 4 CSS toolkit inspired by [Semantic-UI](http://semantic-ui.com/) |
-| [Browse](https://websemantics.github.io/brimer/) | [Browse](https://websemantics.github.io/ant-strap/) | [Browse](https://websemantics.github.io/semantic-strap/) |
+| [View](https://websemantics.github.io/brimer/) | [View](https://websemantics.github.io/ant-strap/) | [View](https://websemantics.github.io/semantic-strap/) |
 
 
 ## Resource
