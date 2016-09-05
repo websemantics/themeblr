@@ -140,7 +140,7 @@ These are few projects built on Themeblr,
 
 [Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap 4.
 
-[Ant Strap](https://github.com/websemantics/strapant), Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/).
+[Ant Strap](https://github.com/websemantics/ant-strap), Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/).
 
 [Semantic Strap](https://github.com/websemantics/semantic-strap), Bootstrap 4 CSS toolkit inspired by [Semantic-UI](http://semantic-ui.com/),
 
