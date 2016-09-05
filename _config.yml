@@ -12,7 +12,7 @@ host:             0.0.0.0
 port:             9001
 name:             Themeblr
 description:      A powerful CSS framework boilerplate and Bootstrap 4 themes builder
-baseurl:
+baseurl:          /themeblr
 encoding:         UTF-8
 
 gems:
