@@ -114,6 +114,13 @@ To build a new project from [Themeblr](https://github.com/websemantics/themeblr)
 There are other Grunt targets with support for generating docs, publishing and deployment can be found in `Gruntfile.js`.
 
 
+## Screenshot
+
+[![Themeblr](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/themeblr.png)](https://websemantics.github.io/themeblr/)
+
+Love the Github *repository buttons* used and want to use them to showcase your own GitHub repositories? the name is Bragit, [Brag It](http://websemantics.github.io/bragit/).
+
+
 ## Font Awesome
 
 Themeblre brings Bootstrap 4 prepackaged with over 634 [Font Awesome](http://fontawesome.io/) icons that can be styled with any CSS you desire, obviously.
@@ -138,11 +145,11 @@ The following section provides examples of projects using this feature to genera
 
 These are few projects built on Themeblr,
 
-[Brimer](https://github.com/websemantics/brimer), The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap 4.
-
-[Ant Strap](https://github.com/websemantics/ant-strap), Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/).
-
-[Semantic Strap](https://github.com/websemantics/semantic-strap), Bootstrap 4 CSS toolkit inspired by [Semantic-UI](http://semantic-ui.com/),
+| Brimer        | Ant Strap           | Semantic Strap  |
+| ------------- |:-------------:| -----:|
+| [![Brimer](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/brimer.png)](https://websemantics.github.io/brimer/) | [![Ant Strap](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/ant-strap.png)](https://websemantics.github.io/ant-strap/) | [![Semantic Strap](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/semantic-strap.png)](https://websemantics.github.io/semantic-strap/) |
+| The base coat of GitHub, [Primer](http://primercss.io/) built from Bootstrap 4 | Bootstrap 4 CSS toolkit inspired by [Ant Design](http://ant.design/) | Bootstrap 4 CSS toolkit inspired by [Semantic-UI](http://semantic-ui.com/) |
+| [Browse](https://websemantics.github.io/brimer/) | [Browse](https://websemantics.github.io/ant-strap/) | [Browse](https://websemantics.github.io/semantic-strap/) |
 
 
 ## Resource
@@ -154,13 +161,6 @@ These are few projects built on Themeblr,
 [Flat Colors](http://www.flatdesigncolors.com/), list of flat colors to use with your designs.
 
 [Color calculator](http://razorjam.github.io/sasscolourfunctioncalculator/), sass color function for calculating the Sass color function required to get from one color to another.
-
-
-## Screenshot
-
-[![Themeblr](https://raw.githubusercontent.com/websemantics/themeblr/master/docs/assets/img/themeblr.png)](https://websemantics.github.io/themeblr/)
-
-Love the Github *repository buttons* used and want to use them to showcase your own GitHub repositories? the name is Bragit, [Brag It](http://websemantics.github.io/bragit/).
 
 
 ## Support
